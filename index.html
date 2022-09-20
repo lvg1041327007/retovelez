@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+</head>
+
+<body style="background-color: rgb(140, 138, 247);
+margin: 20px; color: white;">
+    <h1 style="font-family: georgia; color: rgb(18, 17, 17); text-transform: uppercase;">Descripcion estudiantil</h1>
+    <form method="post" action="/addbinnacle" style="
+    margin: solid;
+    color: rgb(66, 33, 59);
+    border-style: solid;
+    border: 200px;
+    background-color: rgb(174, 203, 229);
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    width: 500px;
+    text-align: center;">
+        <label>Objetivo y actividad</label><br>
+        <input type="text" name="description" size="60" required><br>
+        <label for="card">Fecha inicial</label>
+        <input type="date" name="dateIn" required><br>
+        <label>Observaciones</label>
+        <input type="text" name="observations" size="60" required><br><br>
+        <input type="submit" value="Añadir Bitacora">
+    </form> 
+
+    <form   method="get" action="/getbinnacle">
+        <label class="label">get your binnacle</label>
+        <input type="date" name="looking" required class="form-control" id="looking"> <br><br>
+        <input type="submit" value="get binnacle" class="btn-primary">
+    </form>
+</body>
+
+</html>
